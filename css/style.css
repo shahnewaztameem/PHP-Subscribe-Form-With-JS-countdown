@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+ font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #232325;
+    color: #f0f8fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-name {
+    color: #76b328;
+}
+.main-heading{
+    font-size: 25px;
+}
+
+/* Content Box */
+.content-box {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Counter */
+.counter {
+    margin: 40px 0 70px 0;
+}
+
+.counter-box {
+    min-height: 110px;
+    min-width: 110px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 100%;
+    border:5px solid #76b328;
+    display: inline-block;
+    
+
+}
+
+.counter-box span {
+    display: block;
+}
+
+.counter-number {
+    font-size: 170%;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.counter-text {
+    font-size: 85%;
+    color: #fff;
+}
+
+/* Form Box */
+.form-box {
+    margin: 25px 0;
+}
+
+.form-box input[type=email] {
+    color: #f0f8fa;
+    background-color: #4f4f51;
+    padding-left: 20px;
+    width: 70%;
+    height: 50px;
+    border: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color: #f0f8fa !important;
+
+}
+
+.form-box button#subscribe-btn {
+    padding: 5px 20px;
+    background-color: #76b328;
+    color: #f0f8fa;
+    border: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all .2s;
+}
+
+
+.form-box button#subscribe-btn:hover {
+    background-color: #65a01a;
+}
+
+
+
+/* Left Side Image */
+.landing-img {
+    background-image: url(../images/comingsoon.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1162px) {
+    .hide-img {
+        display: none;
+    }
+
+    .content-box {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .content-box {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    .header {
+        padding: 0 10px;
+    }
+
+    .main-heading {
+        font-size: 200%;
+    }
+
+    .counter {
+        margin: 40px 0;
+    }
+
+    .content-box {
+        width: 100%;
+    }
+
+    .counter-box:nth-child(n+2) {
+        display: none;
+    }
+}
