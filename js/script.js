@@ -4,6 +4,7 @@ var releaseDate = new Date('Dec 30, 2020 00:00:00');
 function interval(){
 	var countdownSelector = document.querySelector("#countdown");
 	var counterNumber = document.getElementsByClassName("counter-number");
+	var counterBox = document.getElementsByClassName("counter-box");
 	//get current time
 	var currentDate = new Date().getTime();
 	var duration = releaseDate - currentDate;
@@ -15,8 +16,18 @@ function interval(){
 	for(var i = 0; i < counterNumber.length; i++){
 		counterNumber[i].textContent = arr[i];
 	}
+	if(duration < 0){
+		closeInterval();
+		countdownSelector.style.color = "#76b328";
+		countdownSelector.style.fontSize = "3em";
+		countdownSelector.textContent = "Website will be launch soon!";
+	}
 	
 }
 
 //call in every 1 seconds
-setInterval(interval, 1000);
+var interval = setInterval(interval, 1000);
+
+function closeInterval(){
+	clearInterval(interval);
+}
