@@ -33,19 +33,19 @@
 						<div class="counter" id="countdown">
 							<!--need to cut the code from here-->
 							<div class="counter-box">
-								<span class="counter-number">5</span>
+								<span class="counter-number"></span>
 								<span class="counter-text">Days</span>
 							</div>
 							<div class="counter-box">
-								<span class="counter-number">20</span>
+								<span class="counter-number"></span>
 								<span class="counter-text">Hours</span>
 							</div>
 							<div class="counter-box">
-								<span class="counter-number">10</span>
+								<span class="counter-number"></span>
 								<span class="counter-text">Mins</span>
 							</div>
 							<div class="counter-box">
-								<span class="counter-number">40</span>
+								<span class="counter-number"></span>
 								<span class="counter-text">Seconds</span>
 							</div>
 							<!--need to cut the code till here-->

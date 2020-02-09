@@ -1,6 +1,8 @@
 //release date
 var releaseDate = new Date('Dec 30, 2020 00:00:00');
+window.onload = interval;
 //check for the interval
+var interval = setInterval(interval, 1000);
 function interval(){
 	var countdownSelector = document.querySelector("#countdown");
 	var counterNumber = document.getElementsByClassName("counter-number");
@@ -26,7 +28,7 @@ function interval(){
 }
 
 //call in every 1 seconds
-var interval = setInterval(interval, 1000);
+
 
 function closeInterval(){
 	clearInterval(interval);
