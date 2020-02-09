@@ -1,12 +1,13 @@
 //release date
 var releaseDate = new Date('Dec 30, 2020 00:00:00');
+var countdownSelector = document.querySelector("#countdown");
+var counterNumber = document.getElementsByClassName("counter-number");
+var counterBox = document.getElementsByClassName("counter-box");
 window.onload = interval;
 //check for the interval
 var interval = setInterval(interval, 1000);
 function interval(){
-	var countdownSelector = document.querySelector("#countdown");
-	var counterNumber = document.getElementsByClassName("counter-number");
-	var counterBox = document.getElementsByClassName("counter-box");
+	
 	//get current time
 	var currentDate = new Date().getTime();
 	var duration = releaseDate - currentDate;
