@@ -1,8 +1,9 @@
+"use strict";
 //release date
-var releaseDate = new Date('Dec 30, 2020 00:00:00');
-var countdownSelector = document.querySelector("#countdown");
-var counterNumber = document.getElementsByClassName("counter-number");
-var counterBox = document.getElementsByClassName("counter-box");
+const releaseDate = new Date('Dec 30, 2020 00:00:00');
+let countdownSelector = document.querySelector("#countdown");
+let counterNumber = document.getElementsByClassName("counter-number");
+let counterBox = document.getElementsByClassName("counter-box");
 const value = 60 * 60 * 1000;
 window.onload = interval;
 //check for the interval
